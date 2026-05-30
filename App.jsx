@@ -824,9 +824,8 @@ export default function App() {
             placeholder="Senha de administrador"
             style={{...inp,width:"100%",marginBottom:12,boxSizing:"border-box",textAlign:"center"}}
             onKeyDown={e=>{if(e.key==="Enter"&&adminPwd===ADMIN_PASS)setIsAdmin(true);}}/>
-          <button onClick={()=>{if(adminPwd===ADMIN_PASS)setIsAdmin(true);}}
-            style={{...btnPrimary,width:"100%"}}>Entrar</button>
-          <div style={{fontSize:11,color:C.muted,marginTop:8}}>Senha: copa2026</div>
+        <button onClick={()=>{if(adminPwd===ADMIN_PASS)setIsAdmin(true);}}
+        style={{...btnPrimary,width:"100%"}}>Entrar</button>
         </div>
       </div>
     );
